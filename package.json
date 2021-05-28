@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "snowpack dev",
+        "build": "snowpack build",
+        "init": "snowpack init"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "snowpack": "^3.5.2"
+    },
+    "name": "snowpack",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+}
