@@ -15,6 +15,8 @@ const vueApp = createApp({
 InertiaProgress.init()
 
 if (import.meta.hot) {
-  import.meta.hot.accept()
+  import.meta.hot.accept();
   import.meta.hot.dispose(() => {
-      vueApp.$destroy(); });
+      vueApp.$destroy();
+  });
+}
