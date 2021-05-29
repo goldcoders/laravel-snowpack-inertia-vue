@@ -1,7 +1,9 @@
 {
     "scripts": {
-        "dev": "snowpack build --watch",
-        "css": "TAILWIND_MODE=watch NODE_ENV=development postcss ./tailwind.css -o ./public/app.css -w"
+        "watch": "snowpack build --watch",
+        "dev": "TAILWIND_MODE=watch NODE_ENV=development postcss tailwind.css -o ./public/app.css -w",
+        "build": "snowpack build",
+        "prod":"NODE_ENV=production npx tailwindcss-cli@latest build tailwind.css -o ./public/app.css"
     },
     "devDependencies": {
         "snowpack": "^3.5.2"
