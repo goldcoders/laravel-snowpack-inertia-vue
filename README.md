@@ -28,12 +28,15 @@ yarn
 
 ## Usage
 1. Open 2 Terminal on this Current Project Folder
-2. On One Terminal run `yarn dev` 
-3. On Another Terminal run `yarn css`
+2. On One Terminal run `yarn watch` 
+3. On Another Terminal run `yarn dev`
 4. Edit `Home.vue` and test tailwind css class change with HMR
 
-## Todo 
-- Test For Production Build with Snowpack
+## Production build
+1. remove on .gitignore _snowpack and dist
+2. run `yarn build`
+3. run `yarn prod`
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
