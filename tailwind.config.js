@@ -1,10 +1,16 @@
 module.exports = {
     mode: 'jit',
-    purge: [
+    purge:{
+      options: {
+        keyframes: true,
+        fontFace: true,
+      },
+      content: [
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
-    ],
+      ]
+    },
     theme: {
       extend: {},
     },
