@@ -1,19 +1,22 @@
 {
-    "private": true,
     "scripts": {
         "start": "snowpack dev",
-        "build": "snowpack build",
-        "init": "snowpack init"
+        "dev": "snowpack build --watch",
+        "prod": "snowpack build"
     },
     "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
         "snowpack": "^3.5.2"
     },
-    "name": "snowpack",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT"
+    "dependencies": {
+        "@inertiajs/inertia": "^0.9.0",
+        "@inertiajs/inertia-vue3": "^0.4.0",
+        "@inertiajs/progress": "^0.2.5",
+        "@snowpack/plugin-postcss": "^1.4.0",
+        "@snowpack/plugin-vue": "^2.6.0",
+        "autoprefixer": "^10.2.6",
+        "postcss": "^8.3.0",
+        "postcss-cli": "^8.3.1",
+        "tailwindcss": "^2.1.2",
+        "vue": "^3.0.11"
+    }
 }
