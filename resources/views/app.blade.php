@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <link rel="stylesheet" type="text/css" href="/global.css" />
-    <link rel="stylesheet" type="text/css" href="dist/js/app.css" />
+    <link rel="stylesheet" type="text/css" href="/app.css" />
    </head>
 <body>
     @inertia
