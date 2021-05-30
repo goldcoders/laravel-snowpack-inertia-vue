@@ -31,8 +31,7 @@ yarn
 2. Edit `Home.vue` and test tailwind css class change with HMR
 
 ## Production build
-1. remove on .gitignore _snowpack and dist
-2. run `yarn build`
+1. run `yarn build`
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
