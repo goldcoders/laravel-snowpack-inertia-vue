@@ -1,0 +1,1 @@
+const a={props:["value"]};import{toDisplayString as s,openBlock as o,createBlock as t,renderSlot as r}from"../../_snowpack/pkg/vue.js";const n={class:"block font-medium text-sm text-gray-700"},l={key:0},c={key:1};export function render(e,p){return o(),t("label",n,[e.value?(o(),t("span",l,s(e.value),1)):(o(),t("span",c,[r(e.$slots,"default")]))])}a.render=render;export default a;

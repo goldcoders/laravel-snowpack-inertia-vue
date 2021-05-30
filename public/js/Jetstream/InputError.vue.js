@@ -1,0 +1,1 @@
+const t={props:["message"]};import{toDisplayString as s,createVNode as o,vShow as r,withDirectives as a,openBlock as c,createBlock as i}from"../../_snowpack/pkg/vue.js";const n={class:"text-sm text-red-600"};export function render(e,p){return a((c(),i("div",null,[o("p",n,s(e.message),1)],512)),[[r,e.message]])}t.render=render;export default t;

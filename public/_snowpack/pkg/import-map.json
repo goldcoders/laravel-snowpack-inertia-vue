@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@headlessui/vue": "./@headlessui/vue.js",
+    "@heroicons/vue/outline": "./@heroicons/vue/outline.js",
+    "@heroicons/vue/solid": "./@heroicons/vue/solid.js",
+    "@inertiajs/inertia-vue3": "./@inertiajs/inertia-vue3.js",
+    "@inertiajs/progress": "./@inertiajs/progress.js",
+    "vue": "./vue.js"
+  }
+}
