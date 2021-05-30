@@ -17,6 +17,7 @@ InertiaProgress.init()
 if (import.meta.hot) {
   import.meta.hot.accept();
   import.meta.hot.dispose(() => {
-      vueApp.$destroy();
+      vueApp.$forceUpdate; //! Force Update
+      console.log(`${import.meta.env.SNOWPACK_PUBLIC_API_URL ?? 'Add SNOWPACK_PUBLIC_API_URL in your .env file'}`)
   });
 }
