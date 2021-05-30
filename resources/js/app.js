@@ -1,23 +1,24 @@
+import { App as InertiaApp, plugin as InertiaPlugin } from '@inertiajs/inertia-vue3';
+import { InertiaProgress } from '@inertiajs/progress';
+import { createApp, h } from 'vue';
 
-import { App, plugin } from '@inertiajs/inertia-vue3'
-import { InertiaProgress } from '@inertiajs/progress'
-import { createApp, h } from 'vue'
-
-const el = document.getElementById('app')
+const el = document.getElementById('app');
 
 const vueApp = createApp({
-  render: () => h(App, {
-    initialPage: JSON.parse(el.dataset.page),
-    resolveComponent: name => import(`./Pages/${name}.vue.js`).then(module => module.default),
-  })
-}).use(plugin).mount(el)
+    render: () =>
+        h(InertiaApp, {
+            initialPage: JSON.parse(el.dataset.page),
+            resolveComponent: name => import(`./Pages/${name}.vue.js`).then(module => module.default),
+        }),
+})
+    .mixin({ methods: { route } })
+    .use(InertiaPlugin)
+    .mount(el);
 
-InertiaProgress.init()
-
-if (import.meta.hot) {
+InertiaProgress.init({ color: '#4B5563' });
+if(import.meta.hot){
   import.meta.hot.accept();
-  import.meta.hot.dispose(() => {
-      vueApp.$forceUpdate; //! Force Update
-      console.log(`${import.meta.env.SNOWPACK_PUBLIC_API_URL ?? 'Add SNOWPACK_PUBLIC_API_URL in your .env file'}`)
-  });
+  import.meta.hot.dispose(()=> {
+    vueApp.$forceUpdate;
+  })
 }
