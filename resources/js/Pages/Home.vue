@@ -31,9 +31,9 @@
             </div>
           </div>
           <div class="hidden md:flex">
-            <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
-              Log in
-            </a>
+            <inertia-link :href="route('login')" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+                    Log in
+            </inertia-link>
           </div>
         </nav>
 
@@ -163,9 +163,12 @@
                       </div>
 
                       <div>
+                      
+                        <inertia-link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
                         <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                          Create your account
+                                    Create your account
                         </button>
+                        </inertia-link>
                       </div>
                     </form>
                   </div>
@@ -195,6 +198,12 @@ const navigation = [
 ]
 
 export default {
+   props: {
+      canLogin: Boolean,
+      canRegister: Boolean,
+      laravelVersion: String,
+      phpVersion: String,
+   },
   components: {
     Popover,
     PopoverButton,
