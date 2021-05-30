@@ -2,6 +2,7 @@
 module.exports = {
   mount: {
       "resources/js": { url: '/dist/js' },
+      "resources/css": { url: '/dist/css' },
   },
   plugins: [
     '@snowpack/plugin-vue',
