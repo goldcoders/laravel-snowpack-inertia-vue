@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <link rel="stylesheet" type="text/css" href="/dist/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
     @env('local')
     @routes
     @endenv
@@ -18,6 +18,6 @@
         <script type="module" src="/_snowpack/hmr-client.js"></script>
         <script type="text/javascript">window.HMR_WEBSOCKET_URL="ws://localhost:12321";</script>
     @endenv
-    <script src="/dist/js/app.js" type="module"></script>
+    <script src="/js/app.js" type="module"></script>
 </body>
 </html>

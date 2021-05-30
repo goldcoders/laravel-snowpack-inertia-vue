@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-      "resources/js": { url: '/dist/js' },
+      "resources/js": { url: '/js' },
   },
   plugins: [
     '@snowpack/plugin-vue',
@@ -9,8 +9,8 @@ module.exports = {
     [
       '@snowpack/plugin-run-script',
       {
-        cmd: 'NODE_ENV=production npx tailwindcss-cli@latest build ./resources/css/app.css -o ./public/dist/css/app.css', // production build command
-        watch: 'TAILWIND_MODE=watch NODE_ENV=development postcss ./resources/css/app.css -o ./public/dist/css/app.css -w', // (optional) dev server command
+        cmd: 'NODE_ENV=production npx tailwindcss-cli@latest build ./resources/css/app.css -o ./public/css/app.css', // production build command
+        watch: 'TAILWIND_MODE=watch NODE_ENV=development postcss ./resources/css/app.css -o ./public/css/app.css -w', // (optional) dev server command
       },
     ],
   ],
