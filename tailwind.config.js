@@ -1,26 +1,28 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
     mode: 'jit',
-    purge:{
-      // preserveHtmlElements: false, // useful for markdown source files
-      options: {
-        // keyframes: true,
-        // fontFace: true,
-        // safelist: ['add-here-new-class-not-to-purge'],
-        // blocklist: [/^debug-/],
-      },
-      content: [
-        // './storage/framework/views/*.php',
-        './resources/**/*.blade.php',
-        './resources/**/*.js',
-        './resources/**/*.vue',
-      ]
-    },
+    purge: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './vendor/laravel/jetstream/**/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.vue',
+    ],
+
     theme: {
-      extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            },
+        },
     },
+
     variants: {
-      extend: {},
+        extend: {
+            opacity: ['disabled'],
+        },
     },
-    plugins: [],
-    // specify other options here
+
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
