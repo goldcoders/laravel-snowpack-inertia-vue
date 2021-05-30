@@ -1,6 +1,6 @@
 ## Laravel Starter App with Snowpack
 
-<img width="730" alt="Screen Shot 2021-05-30 at 6 05 23 PM" src="https://user-images.githubusercontent.com/28816690/120100129-a34b0500-c171-11eb-8ca5-27922a8460c1.png">
+<img width="1678" alt="Screen Shot 2021-05-30 at 6 07 37 PM" src="https://user-images.githubusercontent.com/28816690/120100198-f1600880-c171-11eb-9f14-8e348bb5c2e5.png">
 
 This is a working Example of Snowpack with Laravel , Inertia Js And Vue3
 
