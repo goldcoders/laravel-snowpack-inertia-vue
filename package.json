@@ -1,11 +1,14 @@
 {
     "scripts": {
-        "watch": "snowpack build --watch",
-        "dev": "TAILWIND_MODE=watch NODE_ENV=development postcss tailwind.css -o ./public/app.css -w",
-        "build": "snowpack build",
-        "prod":"NODE_ENV=production npx tailwindcss-cli@latest build tailwind.css -o ./public/app.css"
+        "snowpack:watch": "snowpack build --watch",
+        "tw:dev": "TAILWIND_MODE=watch NODE_ENV=development postcss ./resources/css/app.css -o ./public/dist/css/app.css -w",
+        "snowpack:build": "snowpack build",
+        "tw:prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./resources/css/app.css -o ./public/dist/app.css",
+        "dev": "run-p snowpack:watch tw:dev",
+        "prod": "run-p snowpack:build tw:prod"
     },
     "devDependencies": {
+        "npm-run-all": "^4.1.5",
         "snowpack": "^3.5.2"
     },
     "dependencies": {
