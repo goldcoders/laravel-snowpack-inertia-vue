@@ -2,12 +2,17 @@
 module.exports = {
   mount: {
       "resources/js": { url: '/dist/js' },
-      "resources/css": { url: '/dist/css' },
   },
   plugins: [
     '@snowpack/plugin-vue',
-    '@snowpack/plugin-postcss',
     '@snowpack/plugin-dotenv',
+    [
+      '@snowpack/plugin-run-script',
+      {
+        cmd: 'NODE_ENV=production npx tailwindcss-cli@latest build ./resources/css/app.css -o ./public/dist/css/app.css', // production build command
+        watch: 'TAILWIND_MODE=watch NODE_ENV=development postcss ./resources/css/app.css -o ./public/dist/css/app.css -w', // (optional) dev server command
+      },
+    ],
   ],
   alias: {
     '@': './resources/js',
@@ -17,7 +22,7 @@ module.exports = {
   },
   devOptions: {
     hmr: true,// enable hot reload, make sure to add import.meta.hot in app.js
-    tailwindConfig: './tailwind.config.js',
+    hmrDelay: 300,
   },
   buildOptions: {
     out: 'public',// laravel css and js are serve in public folder
