@@ -32,7 +32,7 @@ yarn
 
 ## Production build
 1. remove on .gitignore _snowpack and dist
-2. run `yarn prod`
+2. run `yarn build`
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
