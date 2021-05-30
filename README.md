@@ -2,6 +2,11 @@
 
 <img width="1678" alt="Screen Shot 2021-05-30 at 6 07 37 PM" src="https://user-images.githubusercontent.com/28816690/120100198-f1600880-c171-11eb-9f14-8e348bb5c2e5.png">
 
+## Compile within Seconds
+
+<img width="1009" alt="Screen Shot 2021-05-30 at 6 08 58 PM" src="https://user-images.githubusercontent.com/28816690/120100224-21a7a700-c172-11eb-83d6-77a3d57757c9.png">
+
+
 This is a working Example of Snowpack with Laravel , Inertia Js And Vue3
 
 ## Requirements
