@@ -19,14 +19,24 @@ module.exports = {
   },
   packageOptions: {
     /* ... */
+    
   },
   devOptions: {
     hmr: true,// enable hot reload, make sure to add import.meta.hot in app.js
     hmrDelay: 300,
+    hmrErrorOverlay: true
   },
   buildOptions: {
     out: 'public',// laravel css and js are serve in public folder
     clean: false, // warning setting this to true will delete other files in public folder
     metaUrlPath: '_snowpack',
   },
+  optimize: {
+    minify: true,
+    // entrypoints: ['./resources/js/app.js'],
+    // target: "es2020",
+    // sourcemap: "inline",
+    // splitting: true,
+    // treeshake: true
+ },
 };
