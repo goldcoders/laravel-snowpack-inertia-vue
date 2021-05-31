@@ -19,9 +19,10 @@
     "dependencies": {
         "@headlessui/vue": "^1.2.0",
         "@heroicons/vue": "^1.0.1",
-        "vue": "^3.0.11",
-        "tailwindcss": "^2.1.2",
+        "@tailwindcss/aspect-ratio": "^0.2.1",
         "@tailwindcss/forms": "^0.3.2",
-        "@tailwindcss/typography": "^0.3.0"
+        "@tailwindcss/typography": "^0.3.0",
+        "tailwindcss": "^2.1.2",
+        "vue": "^3.0.11"
     }
 }
