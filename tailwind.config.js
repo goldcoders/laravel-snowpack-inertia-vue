@@ -23,6 +23,5 @@ module.exports = {
             opacity: ['disabled'],
         },
     },
-
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'),require('@tailwindcss/aspect-ratio'),],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'),],
 };
