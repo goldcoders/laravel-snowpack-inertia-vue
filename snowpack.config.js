@@ -22,7 +22,7 @@ module.exports = {
     },
     devOptions: {
         hmr: true,
-        hmrDelay: 300,
+        hmrDelay: 50,
     },
     buildOptions: {
         out: 'public',
