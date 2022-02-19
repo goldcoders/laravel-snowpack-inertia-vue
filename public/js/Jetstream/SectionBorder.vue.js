@@ -1,1 +1,0 @@
-const e={};import{createVNode as o,openBlock as c,createBlock as r}from"../../_snowpack/pkg/vue.js";const t={class:"hidden sm:block"},s=o("div",{class:"py-8"},[o("div",{class:"border-t border-gray-200"})],-1);export function render(a,d){return c(),r("div",t,[s])}e.render=render;export default e;
