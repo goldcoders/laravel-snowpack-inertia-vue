@@ -17,14 +17,14 @@ const app = createApp({
     .use(InertiaPlugin)
     .mount(el);
 
-
 InertiaProgress.init({ color: '#4B5563' });
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
 // Learn more: https://www.snowpack.dev/concepts/hot-module-replacement
-if (undefined /* [snowpack] import.meta.hot */) {
-    undefined /* [snowpack] import.meta.hot */.accept();
-    undefined /* [snowpack] import.meta.hot */.dispose(() => {
-        app.$destroy();
-    });
-}
+if(import.meta.hot){
+    import.meta.hot.accept();
+    import.meta.hot.dispose(()=> {
+    //   app.$forceUpdate;
+    app.$destroy();
+    })
+  }
