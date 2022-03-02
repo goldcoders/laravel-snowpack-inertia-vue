@@ -6,6 +6,11 @@
 
 <img width="1009" alt="Screen Shot 2021-05-30 at 6 08 58 PM" src="https://user-images.githubusercontent.com/28816690/120100224-21a7a700-c172-11eb-83d6-77a3d57757c9.png">
 
+## Caveats
+
+For production you need to use webpack small price to pay
+Well if your not using snowpack in dev you always pay the price anyway :p
+
 
 This is a working Example of Snowpack with Laravel , Inertia Js And Vue3
 
